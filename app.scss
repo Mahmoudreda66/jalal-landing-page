@@ -1,0 +1,110 @@
+$main-color: #660066;
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background: rgb(247, 229, 253);
+    background: linear-gradient(90deg, rgba(247, 229, 253, 1) 40%, rgba(240, 207, 255, 1) 68%, rgba(231, 198, 245, 1) 100%);
+}
+
+nav.main-logo {
+    background-color: $main-color;
+    max-height: 264px;
+
+    img.main-logo {
+        width: 130px;
+    }
+}
+
+section.main-design {
+    .my-container {
+        overflow: hidden;
+        background-color: #867b89;
+
+        img.perfium-bottle {
+            filter: brightness(1.2) drop-shadow(40px -6px 1px rgba(0, 0, 0, .3));
+        }
+
+        .perfum-hover-box {
+            position: relative;
+
+            &:hover .ingerdients,
+            &:hover img.spot-light {
+                opacity: 1;
+                transition: .5s;
+            }
+
+            img.spot-light {
+                right: -310px;
+                top: -120px;
+                opacity: 0;
+            }
+
+            .ingerdients {
+                position: absolute;
+                top: -20px;
+                left: 0px;
+                opacity: 0;
+                transition: .5s;
+
+                img {
+                    $increment: 170px;
+
+                    position: absolute;
+                    width: 150px;
+                    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, .5));
+
+                    &:first-of-type {
+                        top: 0px;
+                        width: 120px;
+                    }
+
+                    &:nth-of-type(2) {
+                        top: (calc($increment - 20px));
+                    }
+
+                    &:nth-of-type(3) {
+                        top: calc($increment + 130px);
+                    }
+
+                    &:last-of-type {
+                        top: calc($increment + 240px);
+                    }
+                }
+            }
+        }
+
+        p.description {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            width: 50%;
+            text-align: center;
+        }
+    }
+}
+
+section.perfumes {
+    .my-container {
+        img {
+            width: 100px;
+            flex: 1;
+
+            &:hover {
+                filter: brightness(1.1);
+                transition: .5s;
+                margin-top: -5px;
+            }
+        }
+    }
+}
+
+button.btn {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+
+    &.btn-primary {
+        background-color: $main-color;
+        border-color: $main-color;
+    }
+}

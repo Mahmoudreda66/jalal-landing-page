@@ -1,0 +1,87 @@
+body {
+  font-family: "Tajawal", sans-serif;
+  background: rgb(247, 229, 253);
+  background: linear-gradient(90deg, rgb(247, 229, 253) 40%, rgb(240, 207, 255) 68%, rgb(231, 198, 245) 100%);
+}
+
+nav.main-logo {
+  background-color: #660066;
+  max-height: 264px;
+}
+nav.main-logo img.main-logo {
+  width: 130px;
+}
+
+section.main-design .my-container {
+  overflow: hidden;
+  background-color: #867b89;
+}
+section.main-design .my-container img.perfium-bottle {
+  filter: brightness(1.2) drop-shadow(40px -6px 1px rgba(0, 0, 0, 0.3));
+}
+section.main-design .my-container .perfum-hover-box {
+  position: relative;
+}
+section.main-design .my-container .perfum-hover-box:hover .ingerdients, section.main-design .my-container .perfum-hover-box:hover img.spot-light {
+  opacity: 1;
+  transition: 0.5s;
+}
+section.main-design .my-container .perfum-hover-box img.spot-light {
+  right: -310px;
+  top: -120px;
+  opacity: 0;
+}
+section.main-design .my-container .perfum-hover-box .ingerdients {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  opacity: 0;
+  transition: 0.5s;
+}
+section.main-design .my-container .perfum-hover-box .ingerdients img {
+  position: absolute;
+  width: 150px;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
+}
+section.main-design .my-container .perfum-hover-box .ingerdients img:first-of-type {
+  top: 0px;
+  width: 120px;
+}
+section.main-design .my-container .perfum-hover-box .ingerdients img:nth-of-type(2) {
+  top: 150px;
+}
+section.main-design .my-container .perfum-hover-box .ingerdients img:nth-of-type(3) {
+  top: 300px;
+}
+section.main-design .my-container .perfum-hover-box .ingerdients img:last-of-type {
+  top: 410px;
+}
+section.main-design .my-container p.description {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  width: 50%;
+  text-align: center;
+}
+
+section.perfumes .my-container img {
+  width: 100px;
+  flex: 1;
+}
+section.perfumes .my-container img:hover {
+  filter: brightness(1.1);
+  transition: 0.5s;
+  margin-top: -5px;
+}
+
+button.btn {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+button.btn.btn-primary {
+  background-color: #660066;
+  border-color: #660066;
+}
+
+/*# sourceMappingURL=style.css.map */
