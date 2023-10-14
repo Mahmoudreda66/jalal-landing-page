@@ -8,10 +8,15 @@ body {
 
 nav.main-logo {
     background-color: $main-color;
-    max-height: 264px;
 
     img.main-logo {
-        width: 130px;
+        width: 120px;
+    }
+
+    @media(max-width: 992px) {
+        img.main-logo {
+            width: 80px;
+        }
     }
 }
 
@@ -21,7 +26,8 @@ section.main-design {
         background-color: #867b89;
 
         img.perfium-bottle {
-            filter: brightness(1.2) drop-shadow(40px -6px 1px rgba(0, 0, 0, .3));
+            filter: brightness(1.1) drop-shadow(40px -6px 1px rgba(0, 0, 0, .3));
+            width: 280px;
         }
 
         .perfum-hover-box {
@@ -34,8 +40,8 @@ section.main-design {
             }
 
             img.spot-light {
-                right: -310px;
-                top: -120px;
+                right: -300px;
+                top: -180px;
                 opacity: 0;
             }
 
@@ -69,16 +75,51 @@ section.main-design {
                     &:last-of-type {
                         top: calc($increment + 240px);
                     }
+
+                    @media(max-width: 992px) {
+                        width: 100px;
+
+                        &:first-of-type {
+                            left: -30px;
+                            top: 80px;
+                            width: 80px;
+                        }
+
+                        &:nth-of-type(2) {
+                            left: 200px;
+                            top: 100px;
+                            transform: rotate(50deg);
+                        }
+
+                        &:nth-of-type(3) {
+                            left: -80px;
+                            top: 300px;
+                            width: 140px;
+                        }
+
+                        &:last-of-type {
+                            left: 220px;
+                            top: 300px;
+                            width: 100px;
+                        }
+                    }
                 }
             }
         }
 
         p.description {
             color: white;
-            font-size: 30px;
+            font-size: 25px;
             font-weight: bold;
             width: 50%;
             text-align: center;
+        }
+
+        @media(max-width: 992px) {
+            p.description {
+                font-size: 20px;
+                font-weight: normal;
+            }
         }
     }
 }
@@ -86,9 +127,6 @@ section.main-design {
 section.perfumes {
     .my-container {
         img {
-            width: 100px;
-            flex: 1;
-
             &:hover {
                 filter: brightness(1.1);
                 transition: .5s;
@@ -106,5 +144,27 @@ button.btn {
     &.btn-primary {
         background-color: $main-color;
         border-color: $main-color;
+    }
+}
+
+@media(max-width: 992px) {
+    button.btn {
+        font-weight: normal;
+        font-size: 16px;
+
+        &.btn-primary {
+            background-color: $main-color;
+            border-color: $main-color;
+        }
+    }
+}
+
+.perfumes .my-container {
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+
+    img {
+        max-width: 250px;
     }
 }

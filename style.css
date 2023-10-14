@@ -6,10 +6,14 @@ body {
 
 nav.main-logo {
   background-color: #660066;
-  max-height: 264px;
 }
 nav.main-logo img.main-logo {
-  width: 130px;
+  width: 120px;
+}
+@media (max-width: 992px) {
+  nav.main-logo img.main-logo {
+    width: 80px;
+  }
 }
 
 section.main-design .my-container {
@@ -17,7 +21,8 @@ section.main-design .my-container {
   background-color: #867b89;
 }
 section.main-design .my-container img.perfium-bottle {
-  filter: brightness(1.2) drop-shadow(40px -6px 1px rgba(0, 0, 0, 0.3));
+  filter: brightness(1.1) drop-shadow(40px -6px 1px rgba(0, 0, 0, 0.3));
+  width: 280px;
 }
 section.main-design .my-container .perfum-hover-box {
   position: relative;
@@ -27,8 +32,8 @@ section.main-design .my-container .perfum-hover-box:hover .ingerdients, section.
   transition: 0.5s;
 }
 section.main-design .my-container .perfum-hover-box img.spot-light {
-  right: -310px;
-  top: -120px;
+  right: -300px;
+  top: -180px;
   opacity: 0;
 }
 section.main-design .my-container .perfum-hover-box .ingerdients {
@@ -56,18 +61,45 @@ section.main-design .my-container .perfum-hover-box .ingerdients img:nth-of-type
 section.main-design .my-container .perfum-hover-box .ingerdients img:last-of-type {
   top: 410px;
 }
+@media (max-width: 992px) {
+  section.main-design .my-container .perfum-hover-box .ingerdients img {
+    width: 100px;
+  }
+  section.main-design .my-container .perfum-hover-box .ingerdients img:first-of-type {
+    left: -30px;
+    top: 80px;
+    width: 80px;
+  }
+  section.main-design .my-container .perfum-hover-box .ingerdients img:nth-of-type(2) {
+    left: 200px;
+    top: 100px;
+    transform: rotate(50deg);
+  }
+  section.main-design .my-container .perfum-hover-box .ingerdients img:nth-of-type(3) {
+    left: -80px;
+    top: 300px;
+    width: 140px;
+  }
+  section.main-design .my-container .perfum-hover-box .ingerdients img:last-of-type {
+    left: 220px;
+    top: 300px;
+    width: 100px;
+  }
+}
 section.main-design .my-container p.description {
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   width: 50%;
   text-align: center;
 }
-
-section.perfumes .my-container img {
-  width: 100px;
-  flex: 1;
+@media (max-width: 992px) {
+  section.main-design .my-container p.description {
+    font-size: 20px;
+    font-weight: normal;
+  }
 }
+
 section.perfumes .my-container img:hover {
   filter: brightness(1.1);
   transition: 0.5s;
@@ -82,6 +114,25 @@ button.btn {
 button.btn.btn-primary {
   background-color: #660066;
   border-color: #660066;
+}
+
+@media (max-width: 992px) {
+  button.btn {
+    font-weight: normal;
+    font-size: 16px;
+  }
+  button.btn.btn-primary {
+    background-color: #660066;
+    border-color: #660066;
+  }
+}
+.perfumes .my-container {
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.perfumes .my-container img {
+  max-width: 250px;
 }
 
 /*# sourceMappingURL=style.css.map */
