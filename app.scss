@@ -117,13 +117,12 @@ section.main-design {
             color: white;
             font-size: 25px;
             font-weight: normal;
-            width: 50%;
             text-align: right;
         }
 
         @media(max-width: 992px) {
             p.description {
-                font-size: 20px;
+                font-size: 16px;
                 font-weight: normal;
             }
         }
@@ -170,7 +169,7 @@ button.btn {
         justify-content: center;
 
         .images {
-            flex-wrap: wrap;
+            overflow-x: auto;
 
             img {
                 max-width: 250px;

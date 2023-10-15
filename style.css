@@ -96,12 +96,11 @@ section.main-design .my-container p.description {
   color: white;
   font-size: 25px;
   font-weight: normal;
-  width: 50%;
   text-align: right;
 }
 @media (max-width: 992px) {
   section.main-design .my-container p.description {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
   }
 }
@@ -136,7 +135,7 @@ button.btn.btn-primary {
   justify-content: center;
 }
 .perfumes .my-container .images {
-  flex-wrap: wrap;
+  overflow-x: auto;
 }
 .perfumes .my-container .images img {
   max-width: 250px;
