@@ -164,13 +164,18 @@ button.btn {
     }
 }
 
-.perfumes .my-container {
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
+.perfumes {
+    .my-container {
+        text-align: center;
+        justify-content: center;
 
-    img {
-        max-width: 250px;
+        .images {
+            flex-wrap: wrap;
+
+            img {
+                max-width: 250px;
+            }
+        }
     }
 }
 

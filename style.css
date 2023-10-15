@@ -132,11 +132,13 @@ button.btn.btn-primary {
   }
 }
 .perfumes .my-container {
-  flex-wrap: wrap;
   text-align: center;
   justify-content: center;
 }
-.perfumes .my-container img {
+.perfumes .my-container .images {
+  flex-wrap: wrap;
+}
+.perfumes .my-container .images img {
   max-width: 250px;
 }
 
